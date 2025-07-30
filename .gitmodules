@@ -1,0 +1,3 @@
+[submodule "admin"]
+    path = admin
+    url = https://github.com/soamisodoi012/share-administration
