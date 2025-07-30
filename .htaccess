@@ -1,0 +1,14 @@
+# BEGIN Share
+# The directives (lines) between "BEGIN Share" and "END Share" are
+# dynamically generated, and should only be modified via Share filters.
+# Any changes to the directives between these markers will be overwritten.
+<IfModule mod_rewrite.c>
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+# RewriteRule ^([a-zA-Z0-9_-]+)$ $1.php [L]
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+</IfModule>
+
+# END Share
